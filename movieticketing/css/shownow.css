@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0D0E30;
+}
+h2 {
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    color: white;
+}
+th {
+    background-color: #f2f2f2;
+    color: black;
+}
+tr:hover {
+    background-color: grey;
+}
+img {
+    max-width: 100px;
+}
+.delete-btn {
+padding: 8px 16px; 
+border-radius: 4px; 
+background-color: yellow;
+color: black;
+border: none;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+background-color: #da190b;
+}

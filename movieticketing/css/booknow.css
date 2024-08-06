@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #070F2B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 1000px;
+    padding: 100px;
+    background-color: #0b0b3e;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.movie-details {
+    flex: 2;
+}
+
+.movie-details h2,
+.movie-details p {
+    margin: 5px 0;
+}
+
+.booking-form {
+    flex: 1;
+    text-align: center;
+}
+
+.booking-form form {
+    text-align: left;
+}
+
+.booking-form form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.booking-form form input[type="text"],
+.booking-form form input[type="number"] {
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.booking-form form button {
+    width: 100%;
+    padding: 10px 0;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.booking-form form button:hover {
+    background-color: #45a049;
+}
+
+.booking-form form select {
+    width: calc(100% - 50px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #fff;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.seat-layout {
+    text-align: center;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    background-color: #4CAF50;
+    border: 1px solid #999;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.booked {
+    background-color: #FF5733;
+}
+
+.selected {
+    background-color: #FFC300;
+}
+
+.seat-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.error-message {
+    display: none;
+    color: red;
+    font-weight: bold;
+}
+
+.date-button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.date-button.active {
+    background-color: #4CAF50;
+    color: white;
+}
